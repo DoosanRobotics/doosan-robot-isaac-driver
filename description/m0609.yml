@@ -1,0 +1,40 @@
+robot_cfg:
+  kinematics:
+    use_usd_kinematics: False
+    usd_path: "/ros2_ws/src/doosan-robot2/dsr_description2/usd/m0609.usd"
+    urdf_path: "/ros2_ws/src/doosan-robot2/dsr_description2/urdf/m0609_isaac_sim.urdf"
+    asset_root_path: "/ros2_ws/src/doosan-robot2/dsr_description2"
+    usd_robot_root: "/m0609"
+    base_link: "base_link"
+    ee_link: "tool0"
+    link_names: null
+    collision_link_names: ['link_2','link_3','link_4','link_5','link_6']
+    collision_spheres: 'spheres/m0609.yml'
+    collision_sphere_buffer: 0.01
+    extra_collision_spheres: {}
+    self_collision_ignore: {
+      "link_2": ["link_1", "link_3"],
+      "link_3": ["link_4"],
+      "link_4": ["link_5","link_6"],
+      "link_5": ["link_6"],
+      }
+    self_collision_buffer: {
+      'link_1': 0.07,
+      'link_2': 0, 
+      'link_3': 0, 
+      'link_4': 0, 
+      'link_5': 0,
+      'link_6' : 0, 
+      } 
+      
+    mesh_link_names:  ['base_link','link_1', 'link_2', 'link_3', 'link_4' ,'link_5' ,'link_6'] 
+    lock_joints: null
+
+    cspace:
+      joint_names: ['joint_1', 'joint_2', 'joint_3', 'joint_4', 'joint_5', 'joint_6']
+      retract_config:  [0.0, 0, 1.57, 0, 1.57, 0.00]
+      null_space_weight:  [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      cspace_distance_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      max_jerk: 500.0
+      max_acceleration: 12.0
+      position_limit_clip: 0.1
