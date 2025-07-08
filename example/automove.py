@@ -233,14 +233,14 @@ def main():
 
     obstacle_1 = Mesh(
         name="obstacle1",
-        file_path=join_path(get_assets_path(), "/isaac-sim/kit/python/lib/python3.10/site-packages/curobo/content/configs/robot/sh_.obj"),
+        file_path=join_path(get_assets_path(), "/isaac-sim/kit/python/lib/python3.10/site-packages/curobo/content/configs/robot/sphere.obj"),
         pose=[0.7, -0.25, 0.45, 0, 0, 0, 1],
         color=[0.0, 0.0, 0.5, 1.0],
         scale=[1.5,1.5,1.5]
     )
     obstacle_2 = Mesh(
         name="obstacle2",
-        file_path=join_path(get_assets_path(), "/isaac-sim/kit/python/lib/python3.10/site-packages/curobo/content/configs/robot/sh_.obj"),
+        file_path=join_path(get_assets_path(), "/isaac-sim/kit/python/lib/python3.10/site-packages/curobo/content/configs/robot/sphere.obj"),
         pose=[0.5, 0.4, 0.55, 0, 0, 0, 1],
         color=[1.0, 0.5, 0.0, 1.0] ,
     )
