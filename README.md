@@ -42,7 +42,7 @@ cd ~/doosan_curobo/docker
 
 ## How to Run
 
-1. **(GPU PC)** Access the *Automatica 2025* container and run the `automatica2025_example` script:
+1. **(GPU PC)** Access the container and run the `example` script:
 
 ```bash
 docker exec -it automatica2025_container_isaac_sim_4.2.0 bash
