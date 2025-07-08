@@ -46,7 +46,7 @@ cd ~/doosan_curobo/docker
 
 ```bash
 docker exec -it automatica2025_container_isaac_sim_4.2.0 bash
-omni_python automatica2025_example.py
+omni_python automove.py
 ```
 
 2. **(Real-time Kernel PC)** Inside the `sim2dr` directory, run the real-time API script:
